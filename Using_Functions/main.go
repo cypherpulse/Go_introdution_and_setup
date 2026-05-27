@@ -20,16 +20,20 @@ func cycleNames(n []string, f func(string)) {
 	}
 }
 
-func areaOfCircle(radius float64) float64 {
-	return 3.14 * radius * radius
+func areaOfCircle(r float64) float64 {
+	return 3.14 * r * r
 }
 
 func main() {
 	// sayGreeting("Alice")
 	// sayBye("Bob")
 
-	names := []string{"Alice", "Bob", "Charlie", "Bato"}
-	cycleNames(names, sayGreeting)
-	cycleNames(names, sayBye)
+	// names := []string{"Alice", "Bob", "Charlie", "Bato"}
+	// cycleNames(names, sayGreeting)
+	// cycleNames(names, sayBye)
+
+	radius := 5.0
+	area := areaOfCircle(radius)
+	fmt.Printf("The area of a circle with radius %.2f is %.2f\n", radius, area)
 
 }
