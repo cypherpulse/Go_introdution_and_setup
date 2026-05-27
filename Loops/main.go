@@ -11,7 +11,14 @@ func main() {
 	// 	fmt.Println(x)
 	// 	x++
 	// }
-	for i := 0; i < 5; i++ {
-		fmt.Println("value of x is ", i)
+
+	// for i := 0; i < 5; i++ {
+	// 	fmt.Println("value of x is ", i)
+	// }
+
+	// looping though a slice
+	names := []string{"Alice", "Bob", "Charlie", "David"}
+	for index, name := range names {
+		fmt.Printf("Index: %d, Name: %s\n", index, name) // %d is for integer and %s is for string
 	}
 }
